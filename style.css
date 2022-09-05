@@ -673,7 +673,7 @@
     font-size: 12px;
   }
   
-  @media (max-width: 360px) {
+  @media (max-width: 640px) {
     .header {
       background-image: url("img/banner-mobile.jpg");
     }
@@ -833,4 +833,62 @@
       height: 210px;
     }
   }
+
+  @media (max-width: 640px) and (orientation: portrait) {
+    .trend-box {
+      width: 50%;
+    }
+  }
   
+  @media (min-width:641px) and (max-width: 1199px) {
+    .header {
+      background-image: url("img/banner-bg-tablet.jpg");
+    }
+
+    .menu {
+      flex-direction: row-reverse;
+    }
+  
+    .menu-list {
+     display: none;
+    }
+  
+    .menu-button {
+      display: block;
+      border: none;
+      width: 25px;
+      height: 20px;
+      background-color: transparent;
+      position: relative;
+    }
+
+    .menu-button-label, .menu-button::before, .menu-button::after {
+      display: flex;
+      width: 100%;
+      height: 3px;
+      background-color: #ffffff;
+    }
+  
+    .menu-button::before {
+      content: "";
+      position: absolute;
+      top: 0;
+    }
+  
+    .menu-button::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+    }
+
+    .trend-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .trend-box {
+      width: 50%;
+    }
+
+  }
+
