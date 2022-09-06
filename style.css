@@ -24,6 +24,10 @@
     font-family: "OpenSans";
   }
 
+  .popup_visually-hidden {
+    display: none;
+  }
+  
   .popup {
     display: flex;
     width: 100vw;
