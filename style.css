@@ -715,14 +715,6 @@
     padding: 0 15px;
   }
   
-  /*.product-box {
-    width: 33%;
-  }
-
-  /*.product-box:nth-child(1), .product-box:nth-child(2) {
-    margin-right: 6%;
-  }*/
-
   .product {
     width: 33%;
     padding: 0 3%;
@@ -876,6 +868,11 @@
   
     .menu-list {
      display: none;
+    }
+
+    .header-menu {
+      align-self: flex-end;
+      margin-right: 20px;
     }
   
     .menu-button {
